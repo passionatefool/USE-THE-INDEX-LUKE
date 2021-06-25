@@ -7,7 +7,7 @@
 (创建对应 md 文件，并修改如下 title 为中文)
 
 1. *[前言](./preface.md)* — 为什么索引是一项开发任务？
-2. *[Anatomy of an Index](./anatomy.md)* — What does an index look like?
+2. *[解剖索引](./anatomy.md)* —  一条索引长什么样？
     1. *[The Leaf Nodes](./the-leaf-nodes.md)* — A doubly linked list
     2. *[The B-Tree](./the-tree.md)* — It’s a balanced tree
     3. *[Slow Indexes, Part I](./slow-indexes.md)* — Two ingredients make the index slow
