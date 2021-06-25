@@ -30,36 +30,36 @@ WHERE last_name = 'WINAND'
 B-tree 索引在许多数据库中几乎完全相同。这本书主要使用 Oracle 数据库的术语，但会在适当的地方引用其他数据库相应的术语。
 本书的结构是对开发人员量身定制的。大部分章节对应于 SQL 语句的特定部分。
 
-## 第一章 - 解剖索引
+## [第一章](./anatomy.md) - 解剖索引
 
 第一章是唯一没有专门介绍 SQL 的章节，而是介绍索引的基本结构。理解索引的结构对后面的章节非常重要，所以不要跳过这一章！
 虽然这一章很短，大概只有八页，但在看完这章后，你将会理解慢索引这一现象。
 
-## 第二章 - Where 字句
+## [第二章](./where-clause.md) - Where 字句
 
 这是我们将付诸全力之处。本章介绍了 where 字句的所有方面，从非常简单的单列查询到用于范围以及 LIKE 等特殊情况的复杂字句。
 这一章是这本书的主要内容。一旦你学会了使用这些技术，你将会编写出更快的 SQL。
 
-## 第三章 - 性能与可扩展性
+## [第三章](./testing-scalability.md) - 性能与可扩展性
 
 本章是关于性能的度量和数据库的可扩展性，可能有点离题。我们将了解为什么添加硬件并不是解决慢查询的最佳解决方案。
 
-## 第四章 - JOIN 操作
+## [第四章](./join.md) - JOIN 操作
 
 重回 SQL：这里将解释如何使用索引使 JOIN 操作更加快。
 
-## 第五章 - 聚合数据（Clustering Data）
+## [第五章](./clustering.md) - 聚合数据（Clustering Data）
 
 你是否有想过选择一列和所有列之间是否有任何区别？下面是答案和获得更好性能的技巧。
 
-## 第六章 - 排序和分组（Sorting and Grouping）
+## [第六章](./sorting-grouping.md) - 排序和分组（Sorting and Grouping）
 
 甚至连 ORDER BY 与 GROUP BY 都可以使用索引。
 
-## 第七章 - 部分结果（Partial Results）
+## [第七章](./partial-results.md) - 部分结果（Partial Results）
 
 本章将解释如果你不需要完整的结果集合，如何从 pipelined 中获益。
 
-## 第八章 - INSERT，DELETE 与 UPDATE
+## [第八章](./dml.md) - INSERT，DELETE 与 UPDATE
 
 索引如何影响写入性能？索引不是无代价的 -- 明智地使用它们！
