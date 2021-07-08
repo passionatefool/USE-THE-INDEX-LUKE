@@ -26,3 +26,10 @@
 
 没有 `where` 子句的 `delete` 语句是数据库不能使用索引的一个明显例子，尽管这是一个特殊情况，它有自己的 SQL 命令：`truncate table`。此命令与不带 `where` 子句的 `delete` 效果相同，只是它一次性删除所有行。它非常快，但有两个重要的副作用：(1) 它执行隐式提交（例外：PostgreSQL 和 SQL Server）； (2) 它不执行任何触发器。
 
+
+
+>MVCC的副作用
+>
+>多版本并发控制(MVCC)是一种数据库机制，它支持非阻塞并发数据访问和一致的事务视图。然而，实现因数据库而异，甚至可能对性能产生相当大的影响。
+>
+>例如，PostgreSQL数据库只在表级别上保留版本信息(=可见性信息)：删除一行只是在表块中设置了删除标志。因此，PostgreSQL的删除性能不依赖于表上索引的数量。表行的物理删除和相关的索引维护只在[VACUUM](https://www.postgresql.org/docs/current/static/sql-vacuum.html)过程中执行。
