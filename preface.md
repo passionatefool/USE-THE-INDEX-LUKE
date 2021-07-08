@@ -60,6 +60,5 @@ B-tree 索引在许多数据库中几乎完全相同。这本书主要使用 Ora
 
 本章将解释如果你不需要完整的结果集合，如何从 pipelined 中获益。
 
-## 第八章 - INSERT，DELETE 与 UPDATE
-
+## [第八章 - INSERT，DELETE 与 UPDATE](./8-dml.md)
 索引如何影响写入性能？索引不是无代价的 -- 明智地使用它们！

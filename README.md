@@ -6,12 +6,12 @@
 
 (创建对应 md 文件，并修改如下 title 为中文)
 
-1. *[前言](./preface.md)* — 为什么索引是一项开发任务？
-2. *[Anatomy of an Index](./anatomy.md)* — What does an index look like?
+0. *[前言](./preface.md)* — 为什么索引是一项开发任务？
+1. *[Anatomy of an Index](./anatomy.md)* — What does an index look like?
     1. *[The Leaf Nodes](./the-leaf-nodes.md)* — A doubly linked list
     2. *[The B-Tree](./the-tree.md)* — It’s a balanced tree
     3. *[Slow Indexes, Part I](./slow-indexes.md)* — Two ingredients make the index slow
-3. *[The Where Clause](./where-clause.md)* — Indexing to improve search performance
+2. *[The Where Clause](./where-clause.md)* — Indexing to improve search performance
     1. *[The Equals Operator](./the-equals-operator.md)* — Exact key lookup
         1. *[Primary Keys](./primary-keys.md)* — Verifying index usage
         2. *[Concatenated Keys](./concatenated-keys.md)* — Multi-column indexes
@@ -36,30 +36,30 @@
         3. *[Combining Columns](./concatenation.md)* — use redundant `where` clauses
         4. *[Smart Logic](./smart-logic.md)* — The smartest way to make SQL slow
         5. *[Math](./math.md)* — Databases don’t solve equations
-4. *[Testing and Scalability](./testing-scalability.md)* — About hardware
+3. *[Testing and Scalability](./testing-scalability.md)* — About hardware
     1. *[Data Volume](./data-volume.md)* — Sloppy indexing bites back
     2. *[System Load](./system-load.md)* — Production load affects response time
     3. *[Response Time and Throughput](./response-time-throughput-scaling-horizontal.md)* — Horizontal scalability
-5. *[The Join Operation](./join.md)* — Not slow, if done right
+4. *[The Join Operation](./join.md)* — Not slow, if done right
     1. *[Nested Loops](./nested-loops-join-n1-problem.md)* — About the N+1 selects problem in ORM
     2. *[Hash Join](./hash-join-partial-objects.md)* — Requires an entirely different indexing approach
     3. *[Sort-Merge Join](./sort-merge-join.md)* ‌— Like a zipper on two sorted sets
-6. *[Clustering Data](./clustering.md)* — To reduce IO
+5. *[Clustering Data](./clustering.md)* — To reduce IO
     1. *[Index Filter Predicates Intentionally Used](./index-filter-predicates.md)* — to tune `LIKE`
     2. *[Index-Only Scan](./index-only-scan-covering-index.md)* — Avoiding table access
     3. *[Index-Organized Table](./index-organized-clustered-index.md)* — Clustered indexes without tables
-7. *[Sorting and Grouping](./sorting-grouping.md)* — Pipelined `order by`: the third power
+6. *[Sorting and Grouping](./sorting-grouping.md)* — Pipelined `order by`: the third power
     1. *[Indexed Order By](./indexed-order-by.md)* — `where` clause interactions
     2. *[`ASC`/`DESC` and `NULL FIRST`/`LAST`](./order-by-asc-desc-nulls-last.md)* — changing index order
     3. *[Indexed Group By](./indexed-group-by.md)* — Pipelining `group by`
-8. *[Partial Results](./partial-results.md)* — Paging efficiently
+7. *[Partial Results](./partial-results.md)* — Paging efficiently
     1. *[Selecting Top-N Rows](./top-n-queries.md)* — if you need the first few rows only
     2. *[Fetching The Next Page](./fetch-next-page.md)* — The offset and seek methods compared
     3. *[Window-Functions](./window-functions.md)* — Pagination using analytic queries
-9. *[Insert, Delete and Update](./dml.md)* — Indexing impacts on DML statements
-    1. *[Insert](./insert.md)* — cannot take direct benefit from indexes
-    2. *[Delete](./delete.md)* — uses indexes for the `where` clause
-    3. *[Update](./update.md)* — does not affect all indexes of the table
+8. *[Insert、Delete与Update](./8-dml.md)* — 索引对DML语句的影响
+    1. *[Insert](./8-1-insert.md)* — 无法直接从索引中获益
+    2. *[Delete](./8-2-delete.md)* — 为`where`子句使用索引
+    3. *[Update](./8-3-update.md)* — 不会影响到表的所有索引
 
 
 <details><summary>原文目录链接</summary>
