@@ -6,12 +6,12 @@
 
 (创建对应 md 文件，并修改如下 title 为中文)
 
-0. *[前言](./preface.md)* — 为什么索引是一项开发任务？
-1. *[Anatomy of an Index](./anatomy.md)* — What does an index look like?
-    1. *[The Leaf Nodes](./the-leaf-nodes.md)* — A doubly linked list
-    2. *[The B-Tree](./the-tree.md)* — It’s a balanced tree
-    3. *[Slow Indexes, Part I](./slow-indexes.md)* — Two ingredients make the index slow
-2. *[The Where Clause](./where-clause.md)* — Indexing to improve search performance
+1. *[前言](./preface.md)* — 为什么索引是一项开发任务？
+2. *[解剖索引](./anatomy.md)* —  一条索引长什么样？
+    1. *[叶子节点](./the-leaf-nodes.md)* -- 双向链表
+    2. *[B-Tree](./the-tree.md)* -- 平衡树
+    3. *[慢索引，第一部分](./slow-indexes.md)* -- 两个因素使索引变得缓慢
+3. *[The Where Clause](./where-clause.md)* — Indexing to improve search performance
     1. *[The Equals Operator](./the-equals-operator.md)* — Exact key lookup
         1. *[Primary Keys](./primary-keys.md)* — Verifying index usage
         2. *[Concatenated Keys](./concatenated-keys.md)* — Multi-column indexes
